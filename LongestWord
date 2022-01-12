@@ -1,0 +1,6 @@
+function LongestWord(sen) {  
+  sen = sen.replace(/[^\w\s]/g, ""); //replaces anything that isn't an alphanumeric or whitespace 
+  sen = sen.split(' ');
+  sen = sen.sort((a, b) => b.length - a.length); //b minus a gives descending order
+  return sen[0]
+}
