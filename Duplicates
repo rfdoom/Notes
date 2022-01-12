@@ -1,0 +1,9 @@
+function DistinctList(arr) { 
+  let duplicates = arr.filter((a, b) => arr.indexOf(a) != b);  //keeps any element that is not repeated
+  //console.log(duplicates)
+  let times = 0;
+  for (let i = 0; i < duplicates.length; i++) {
+    times += 1;
+  }
+  return times;
+}
