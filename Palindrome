@@ -1,0 +1,10 @@
+function PalindromeTwo(str) { 
+  str = str.replace(/[^\w]|_/g, "");  //the regex replaces anything isn't an alphanumeric, but does replace the underscore
+  str = str.toLowerCase()
+  let revStr = str.split('').reverse().join('');
+  if (revStr === str) {
+    return true
+  } else {
+    return false
+  }
+}
